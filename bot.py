@@ -1,8 +1,9 @@
 import os
-
+import time
 from heroku3 import from_key
+from telethon.sync import TelegramClient
+from telethon.sessions import StringSession
 from pyrogram import Client
-from pyromod import listen
 
 API_ID = int(os.environ.get("API_ID", 0))
 API_HASH = os.environ.get("API_HASH", None)
